@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="How are you feeling?"
+        android:textSize="20sp"
+        android:layout_marginBottom="20dp" />
+
+    <RadioGroup
+        android:id="@+id/radioGroupMood"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp">
+
+        <RadioButton
+            android:id="@+id/radioHappy"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="😊 Happy" />
+
+        <RadioButton
+            android:id="@+id/radioSad"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="😢 Sad" />
+
+        <RadioButton
+            android:id="@+id/radioAngry"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="😠 Angry" />
+
+        <RadioButton
+            android:id="@+id/radioCalm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="😌 Calm" />
+
+    </RadioGroup>
+
+    <EditText
+        android:id="@+id/editTextNote"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:hint="Add a note about your mood..."
+        android:gravity="top"
+        android:layout_marginBottom="20dp" />
+
+    <Button
+        android:id="@+id/btnSave"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Save Mood Entry" />
+
+</LinearLayout>
